@@ -1,0 +1,12 @@
+{
+  "name": "miler-api",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "docker-compose up -d --build",
+    "lint": "pylint --rcfile=.pylintrc articles config users",
+    "test": "docker-compose exec django ./manage.py test"
+  },
+  "repository": "https://github.com/milerDev/miler-api",
+  "author": "stunstunstun <wjdsupj@gmail.com>",
+  "license": "MIT"
+}
