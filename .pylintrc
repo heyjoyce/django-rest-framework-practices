@@ -1,0 +1,6 @@
+[MESSAGES CONTROL]
+disable=C,R,file-ignored,fixme,locally-disabled,protected-access,no-name-in-module,useless-else-on-loop,unnecessary-pass,broad-except
+enable=useless-suppression
+
+[REPORTS]
+reports=n
