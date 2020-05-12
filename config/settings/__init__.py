@@ -44,8 +44,7 @@ THIRD_PARTY_APPS = [
 ]
 
 PROJECT_APPS = [
-    'users.apps.UsersConfig',
-    'articles.apps.ArticlesConfig'
+    'app.apps.ApplicationConfig'
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + PROJECT_APPS
@@ -79,21 +78,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'config.wsgi.application'
-
-
-# Database
-# https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_NAME', 'djangosample'),
-        'USER': os.environ.get('DB_USERNAME', 'sampleuser'),
-        'PASSWORD': os.environ.get('DB_PASSWORD', 'samplesecret'),
-        'HOST': os.environ.get('DB_HOST', 'localhost'),
-        'PORT': os.environ.get('DB_PORT', '5432'),
-    }
-}
 
 
 # Password validation
