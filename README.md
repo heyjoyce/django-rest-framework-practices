@@ -35,8 +35,9 @@ $ pip install -r requirements.txt
 
 ## Configure a django application
 
-```
+```bash
 $ python manage.py makemigrations
+$ python manage.py makemigrations users # Each models
 $ python manage.py migrate
 $ python manage.py createsuperuser
 ```
@@ -50,7 +51,7 @@ $ python manage.py runserver
 ## Testing
 
 ```
-$ curl -i http://127.0.0.1:8000/users/
+$ pytest
 ```
 
 ## Docker
